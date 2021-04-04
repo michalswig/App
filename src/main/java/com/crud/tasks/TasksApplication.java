@@ -7,16 +7,15 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class TasksApplication extends SpringBootServletInitializer {
+//public class TasksApplication extends SpringBootServletInitializer {
+public class TasksApplication {
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return super.configure(builder);
-	}
+//	@Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//		return super.configure(builder);
+//	}
 
-	public static void main(String[] args) {
-
-
+    public static void main(String[] args) {
 
 //		TaskDto taskDto = new TaskDto(
 //			(long)1,
@@ -27,7 +26,7 @@ public class TasksApplication extends SpringBootServletInitializer {
 //		String title = taskDto.getTitle();
 //		String content = taskDto.getContent();
 //		System.out.println(id + " " + title + " " + content);
-		SpringApplication.run(TasksApplication.class, args);
-	}
+        SpringApplication.run(TasksApplication.class, args);
+    }
 
 }
