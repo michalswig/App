@@ -3,8 +3,6 @@ package com.crud.tasks.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +20,6 @@ public class TrelloBoardDto {
     @JsonProperty("lists")
     private List<TrelloListDto> lists;
 
-    public TrelloBoardDto(String test_id, String test_board, ArrayList<Object> objects) {
-    }
+//    public TrelloBoardDto(String test_id, String test_board, ArrayList<Object> objects) {
+//    }
 }
