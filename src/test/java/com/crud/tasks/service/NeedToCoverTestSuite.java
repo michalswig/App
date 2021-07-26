@@ -4,9 +4,8 @@ import com.crud.tasks.domain.AttachmentsByType;
 import com.crud.tasks.domain.Badges;
 import com.crud.tasks.domain.CreatedTrelloCardDto;
 import com.crud.tasks.domain.Trello;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -31,14 +30,12 @@ public class NeedToCoverTestSuite {
         trelloCardDto.setId("1");
         trelloCardDto.setName("testName");
         trelloCardDto.setShortUrl("testUrl");
-        //When
-        //Then
+        //When & Then
         assertEquals(attachmentsByType.getTrello().getBoard(), 1);
         assertEquals(attachmentsByType.getTrello().getCard(), 1);
         assertEquals(badges.getVotes(), 10);
         assertEquals(badges.getAttachmentsByType().getTrello().getBoard(), 1);
         assertEquals(badges.getAttachmentsByType().getTrello().getCard(), 1);
-        assertEquals(trelloCardDto.getId(), 1);
         assertEquals(trelloCardDto.getName(), "testName");
         assertEquals(trelloCardDto.getShortUrl(), "testUrl");
     }

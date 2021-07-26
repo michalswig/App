@@ -53,6 +53,8 @@ public class TrelloClient {
                 .build()
                 .encode()
                 .toUri();
+        System.out.println("test1: " + trelloCardDto.getName());
+        System.out.println("test1: " + trelloCardDto.getDescription());
         return restTemplate.postForObject(url, null, CreatedTrelloCardDto.class);
     }
 

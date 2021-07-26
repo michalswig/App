@@ -38,7 +38,7 @@ public class TrelloService {
                         )
                 )
         );
-
+        System.out.println("test2: " + newCard.getId());
         return newCard;
     }
 }
