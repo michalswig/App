@@ -12,11 +12,11 @@ public class GoogleTestingApp {
 
     public static void main(String[] args) {
         WebDriver driver = WebDriverConfig.getDriver(WebDriverConfig.CHROME);
-        driver.get("https://www.google.com");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+        driver.get("https://www.google.com/webhp?source=hp&ei=bTMKYevnG4HIgQar_ZWwBA&iflsig=AINFCbYAAAAAYQpBfbWLXAxP4PuXVGKs_2H7EVsZ126F");
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.findElement(By.id("L2AGLb")).click();
         WebElement searchField = driver.findElement(By.name(SEARCHFIELD));
-//        searchField.sendKeys("Kodilla");
+        searchField.sendKeys("Kodilla");
         searchField.submit();
     }
 }
