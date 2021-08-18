@@ -130,13 +130,13 @@ public class CruddAppTestSuite {
         Thread.sleep(4000);
     }
 
-    @Test
-    public void shouldCreateTrelloCard() throws InterruptedException {
-        String taskName = createCrudAppTestTask();
-        sendTestTaskToTrello(taskName);
-        assertTrue(checkTaskExistsInTrello(taskName));
-        cleanCrudTask(taskName);
-    }
+//    @Test
+//    public void shouldCreateTrelloCard() throws InterruptedException {
+//        String taskName = createCrudAppTestTask();
+//        sendTestTaskToTrello(taskName);
+//        assertTrue(checkTaskExistsInTrello(taskName));
+//        cleanCrudTask(taskName);
+//    }
 
 
 }
